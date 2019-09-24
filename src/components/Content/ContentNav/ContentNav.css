@@ -1,0 +1,15 @@
+.btn{
+    background-image: url('..\..\Button\button.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0A1165;
+    font-family: 'Courier New', Courier, monospace;
+    margin:2px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}

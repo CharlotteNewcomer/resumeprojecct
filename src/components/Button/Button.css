@@ -1,0 +1,22 @@
+.optname {
+ 
+    min-height: 50px;
+    width:auto;
+    max-width:190px;
+    background-image: url('./button.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0A1165;
+    font-family: 'Courier New', Courier, monospace;
+    margin:2px;
+}
+
+.optname:hover {
+  cursor: pointer;
+}
+
+
+
