@@ -1,6 +1,8 @@
  html, body {
   text-align: center;
   height: 100%;
+  min-width: 700px;
+  
   background: radial-gradient(farthest-corner at 30% 80%, rgb(94, 255, 201) , #04C8DE ) no-repeat;
   background-size: cover;
   margin: 0;

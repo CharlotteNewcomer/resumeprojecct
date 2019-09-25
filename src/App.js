@@ -16,7 +16,7 @@ class App extends Component {
           <Title />
           <Navigation />
         </div>
-        <div className='cf'>
+        <div className='cf flex items-start justify-between'>
           <Menu/>
           <Content />
         </div>

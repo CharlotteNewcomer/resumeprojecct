@@ -5,10 +5,10 @@ const pages = ['Home', 'Stomach', 'Liver', 'Pancreas', 'Small Intestines', 'Larg
 
 const Button = () => {
   return(
-    <div>
+    <div className='btnMenu'>
       { pages.map (function (page) {
         return(
-          <div className="optname flex items-center justify-center ">
+          <div className="f6 optname flex items-center justify-center ">
             {page}
         </div>
         )
