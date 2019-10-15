@@ -8,6 +8,7 @@
     color: #0A1165;
     font-family: 'Courier New', Courier, monospace;
     margin:2px;
+    max-width: 150px;
 }
 
 .btn:hover {

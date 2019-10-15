@@ -1,8 +1,9 @@
 import React from 'react';
+import { organInfo} from '../../data.js';
 
 const Title = () => {
     return (
-       <h1 className='pa2 f1'> Lesson Title  </h1>
+       <h1 className='pa2 f1'> {organInfo.liver.heading} </h1>
     )
 
 }
