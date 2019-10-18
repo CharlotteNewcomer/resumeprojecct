@@ -9,7 +9,7 @@ import 'tachyons';
 const Menu = () => {
   return( 
     
-    <div className='fl ba '>
+    <div className='ba '>
         <Button  />
     </div>
    

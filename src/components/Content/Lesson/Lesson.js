@@ -17,7 +17,3 @@ const Lesson = () => {
   
   export default Lesson;
 
-//  united visa- call- 
-//      see if removing hold $200 from car rental last Week
-//      see when $610 payment will post
-//      see if pre-auth is going through for next rental ($500)

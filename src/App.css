@@ -11,3 +11,17 @@
 .App {
   text-align: center;
 }
+
+.mainBody{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+
+}
+
+menu{
+  grid-area: 1/1 / 9/2;
+}
+
+content{
+ grid-area: 1/3 /9/9;
+}
