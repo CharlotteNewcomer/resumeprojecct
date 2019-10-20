@@ -10,12 +10,12 @@ const Content = (userInfo) => {
  * need to organize content better
 */
   return(
-    <div className='pa2 fr  mr3 ba'>
+    <div className='pa2 fr  mr3'>
        <div className='flex items-center justify-between'>
-         <Lesson userInfo={userInfo}/>
-          <Audio/>
+         <Lesson className='w-80' userInfo={userInfo}/>
+          <Audio className='w-20'/>
        </div>
-        <ContentNav/> 
+        <ContentNav className='w-80'/> 
     </div>
   )
   

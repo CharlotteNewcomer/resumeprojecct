@@ -38,7 +38,9 @@ export const organInfo ={
     'liver': {
         'image': `./Liver.png`,
         'heading':'The Liver',
-        'text':['Bile is produced in the liver and transferred over to the small intestine to continue the process of digestion.','Fatty foods are easier to digest because of the liver.','The liver helps with digestion but does not allow food to pass through it.'],
+        'text':['Bile is produced in the liver and transferred over to the small intestine to continue the process of digestion.',
+            'Fatty foods are easier to digest because of the liver.',
+            'The liver helps with digestion but does not allow food to pass through it.'],
         'quiz':[['What is the function that is performed by the liver?',['the production of bile', 'the storage of bile', 'the absorption of nutrients','the production of enzymes']],['Question1',['correctanswer', 'wronganswer1', 'wronganswer2','wronganswer3','wronganswer4']],[],[],[]],
         'audio':'./liver2.mp3',
         'quizaudio': './liverquiz.mp3'
