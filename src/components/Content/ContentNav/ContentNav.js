@@ -10,7 +10,7 @@ const ContentNav = () => {
       
       </div>
     )
-   {/* elseif  {
+   /* elseif  {
       return(
          <div className='fl w-80 flex justify-between'>
 
@@ -22,7 +22,7 @@ const ContentNav = () => {
 
 
       )
-    }*/}
+    }*/
     
   }
   

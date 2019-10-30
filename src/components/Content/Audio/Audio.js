@@ -1,6 +1,6 @@
 import React from 'react';
 import pic from "../Images/Doctor.png";
-//import '../ContentNav/ContentNav.css';
+
 
 const Audio = () => {
     return(

@@ -1,14 +1,14 @@
 import React from 'react';
 import './Button.css';
+//
+const pages = ['Home', 'Stomach', 'Liver', 'Pancreas', 'Small Intestines', 'Large Intestines', 'Game', 'Help', 'Site Map', 'Credits', 'Sign Out']
 
-const pages = ['Home', 'Stomach', 'Liver', 'Pancreas', 'Small Intestines', 'Large Intestines', 'Game', 'Help', 'Site Map', 'Credits', 'Exit']
-
-const Button = () => {
+const Button = ({onPageChange}) => {
   return(
     <div className='btnMenu '>
       { pages.map (function (page) {
         return(
-          <div className="f6 optname">
+          <div onClick={() => onPageChange(page)} className="f6 optname">
             {page}
         </div>
         )

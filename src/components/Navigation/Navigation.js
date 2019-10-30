@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Navigation = () => {
+const Navigation = ({onPageChange}) => {
   return(
      <nav className='fr pa2'>
-     <p className='f5 link dim pa3 pointer'>Sign Out</p>
+     <p onClick={() => onPageChange('sign out')} className='f5 link dim pa3 pointer'>Sign Out</p>
    </nav>
   )
   

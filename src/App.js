@@ -9,31 +9,50 @@ import {userInfo} from './data.js';
 import './App.css';
 import 'tachyons';
 
-
 class App extends Component {
   constructor () {
 		super()
 		this.state={
-			page: 'liver',
+			page: 'Liver',
       signedIn: true,  
     }
-	}
-/** **check grid out... see if works better than tachyons** trying to center menu vertically on content */
+  }
+  
+onPageChange = (page) => {
+  if (page === 'sign out') {
+    this.setState({signedIn: false})
+  } else  {
+    this.setState({signedIn: true})
+  }
+ // if (signedIn===true){
+    this.setState({page: page});
+ // }
+  
+  
+}
+
   render() {
-    return (
-      <div className="App">
-        <div className='flex items-center justify-between'>
-          <Logo />
-          <Title />
-          <Navigation />
+    const {signedIn, page}= this.state;
+    if (signedIn===true){
+       return (
+        <div className="App">
+          <div className='flex items-center justify-between'>
+            <Logo />
+            <Title page={page}/>
+            <Navigation signedIn={signedIn} onPageChange={this.onPageChange}/>
+          </div>
+          <div className='mainBody'>
+            <Menu  signedIn={signedIn} onPageChange={this.onPageChange} page={page}/>
+            <Content  userInfo={userInfo} page={page}/>
+          </div>           
         </div>
-        <div className='mainBody'>
-          <Menu />
-          <Content  userInfo={userInfo}/>
-        </div>
-               
-      </div>
-    );
+      );
+    } else {
+      return (
+        <div> You need to sign in... page to be designed</div>
+      )
+    }
+   
   }
 }
 
