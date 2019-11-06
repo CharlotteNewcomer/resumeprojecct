@@ -3,6 +3,8 @@ import Audio from './Audio/Audio';
 import Lesson from './Lesson/Lesson';
 import Info from './Info/Info';
 import ContentNav from './ContentNav/ContentNav';
+import './Content.css';
+import mainmenu from './Images/mainmenu.png';
 
 const Content = ({userInfo, page}) => {
 /** * need to make so quiz shows when quiz clicked on (need to make quiz component)
@@ -11,7 +13,8 @@ const Content = ({userInfo, page}) => {
 */
 switch(page){
   case 'Home':
-      return (<div className='pa2 f4'> Home page goes here </div>);
+      return (<div className='pa2 f4 home'> 
+      <img className='menu'style={{width:'100%', height:'auto' }} alt='Digestive System' src={mainmenu}/> </div>);
   case 'Stomach':
   case 'Liver':
   case 'Pancreas':
@@ -32,7 +35,7 @@ switch(page){
   case 'Credits':
       return (
         <div className='pa2 fr  mr3'>
-          <Info className=''/> 
+          <Info className='' page={page}/> 
         </div>
         );
   default:

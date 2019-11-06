@@ -1,16 +1,31 @@
 .optname { 
-    line-height: 3;
-    min-width: 100px;
+    line-height: 4;
+    width: 150px;
+    height: 55.5px;
     background-image: url('./button.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
-    font-size: 18px;
-    font-weight: bold;
+    background-size: contain;
+    font-size: 20px;
     color: #0A1165;
     font-family: 'Courier New', Courier, monospace;
     margin: auto;
+    text-align: center;
    
+}
+.optname1 { 
+  line-height: 4;
+  width: 150px;
+  background-image: url('./button.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #0A1165;
+  font-family: 'Courier New', Courier, monospace;
+  margin: auto;
+ 
 }
 
 .optname:hover {
