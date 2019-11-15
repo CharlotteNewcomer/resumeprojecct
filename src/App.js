@@ -13,37 +13,54 @@ class App extends Component {
   constructor () {
 		super()
 		this.state={
-			page: 'Liver',
-      signedIn: true,  
+			page: "Home", 
+      homePic: "home",
+      highlighted: false,
+      signedIn: true
     }
   }
-  
+
+showCoords = (Event) => {
+    var y = Event.screenY;
+    var x = Event.screenX;
+    console.log ("X coords: " + x + ", Y coords: " + y);
+}
+
 onPageChange = (page) => {
-  if (page === 'sign out') {
-    this.setState({signedIn: false})
-  } else  {
-    this.setState({signedIn: true})
-  }
- // if (signedIn===true){
+  // if (this.state.page === 'sign out') {
+  //   this.setState({signedIn: false})
+  // } else  {
+  //   this.setState({signedIn: true})
+  // }
+  if (this.state.signedIn===true){
     this.setState({page: page});
- // }
-  
-  
+    this.setState.homePic='home'
+  }
+}
+
+onHighlight = (homePic) => {
+ if (this.state.highlighted === false) {
+    this.setState({homePic:homePic});
+    this.setState({highlighted:true});
+   } else  {
+     this.setState({homePic: 'home'});
+     this.setState({highlighted:false});
+   }
 }
 
   render() {
-    const {signedIn, page}= this.state;
+    const {signedIn, page, homePic, onPageChange}= this.state;
     if (signedIn===true){
        return (
-        <div className="App">
+        <div className="App" >
           <div className='flex items-center justify-between'>
             <Logo />
             <Title page={page}/>
-            <Navigation signedIn={signedIn} onPageChange={this.onPageChange}/>
+            <Navigation signedIn={signedIn} onPageChange={onPageChange}/>
           </div>
           <div className='mainBody'>
             <Menu  signedIn={signedIn} onPageChange={this.onPageChange} page={page}/>
-            <Content  userInfo={userInfo} page={page}/>
+            <Content showCoords={this.showCoords} userInfo={userInfo} onPageChange={this.onPageChange} page={page}  homePic={homePic} onHighlight={this.onHighlight}/>
           </div>           
         </div>
       );

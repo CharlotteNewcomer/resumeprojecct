@@ -259,7 +259,9 @@ export const infoInfo ={
             {link:'https://publicdomainvectors.org/en/free-clipart/Young-female-doctor/52241.html',     
             picName:'"Young-female-doctor"'},
             {link:'https://publicdomainvectors.org/en/free-clipart/Human-body-color-silhouette/83431.html',
-            picName:'"Human body color silhouette"(logo)'}
+            picName:'"Human body color silhouette"(logo)'},
+            {link:'https://pixabay.com/vectors/bucket-container-pail-tool-vessel-2027031/',
+            picName:'"bucket"'}
             ],
         creativeCommons: [
             {link:'https://smart.servier.com/smart_image/complete-digestive-apparatus/',
